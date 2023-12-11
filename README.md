@@ -35,7 +35,7 @@ MyMyntra Clone aims to provide a familiar and user-friendly interface for online
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/my-myntra-clone.git
+   git clone https://github.com/Tanay-Shah/Myntra-Clone.git
    ```
 
 2. Open the project in your preferred code editor.
