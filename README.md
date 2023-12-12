@@ -19,6 +19,7 @@ MyMyntra Clone aims to provide a familiar and user-friendly interface for online
 ## Features
 
 - **Product Listings:** Browse a variety of fashion and lifestyle products.
+- **AI ChatBot** You can take assistance by Integrated AI chatbot.
 - **User Authentication:** Register and log in to the platform to access personalized features.
 - **Product Details:** View detailed information about each product, including images, descriptions, and prices.
 - **Shopping Cart:** Add products to your cart and manage your shopping selections.
