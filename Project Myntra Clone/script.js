@@ -55,3 +55,43 @@ if(!itemsContainerElement){return;}
 
   itemsContainerElement.innerHTML = inHtml;
 }
+
+////SEARCH BAR
+let inpu;
+let searchInput=document.querySelector('.search_input');
+let productPop=document.querySelector('.product-search');
+
+productPop.addEventListener("keypress", (e) => {
+  setTimeout(searchSort, 10);
+  if(searchInput.value.length>0){
+  document.getElementById("product-search-pop").style.display = "block";
+  }
+  else{
+  document.getElementById("product-search-pop").style.display = "none";
+  }
+}); 
+
+function searchSort(){
+let searchList=[];
+items.forEach((e) => {
+  if (e.item_name.includes(searchInput.value)) {
+    searchList.push({id:e.id,iName:e.item_name,iImage:e.image});
+  }
+});
+searchDisp(searchList);
+
+}
+
+function searchDisp(arr){
+  let searchContainer=document.querySelector('#product-search-pop');
+  let innerh='';
+  arr.forEach((e)=>{
+    innerh += `
+    <div class="miniSearch">
+                    <span class="miniSearch-img"><img class="immg" src="${e.iImage}" alt=""></span>
+                    <p class="miniSearch-name">${e.iName}</p>
+                </div>
+    `;
+  })
+  searchContainer.innerHTML=innerh;
+}
